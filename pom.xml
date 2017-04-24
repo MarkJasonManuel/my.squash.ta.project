@@ -10,12 +10,12 @@
 	<version>0.0.1-SNAPSHOT</version>
 
 	<properties>
-	<!-- provide default valid but fake URL to the event listener
-		to avoid an exception that breaks the build when executing it standalone 
-		NB: while /dev/null only exists in *nixes, this value creates no problem in windows. -->
+		<!-- provide default valid but fake URL to the event listener to avoid 
+			an exception that breaks the build when executing it standalone NB: while 
+			/dev/null only exists in *nixes, this value creates no problem in windows. -->
 		<main.basedir>${project_loc}</main.basedir>
 		<status.update.events.url>file:/dev/null</status.update.events.url>
-        <logConfFile>src/log4j.properties</logConfFile>
+		<logConfFile>src/log4j.properties</logConfFile>
 	</properties>
 
 	<build>
@@ -26,8 +26,9 @@
 				<groupId>org.squashtest.ta</groupId>
 				<artifactId>squash-ta-maven-plugin</artifactId>
 				<version>1.5.0-RELEASE</version>
-				
-				<!--  here you can add engine plugins , using the <dependencies></dependencies> tag -->
+
+				<!-- here you can add engine plugins , using the <dependencies></dependencies> 
+					tag -->
 				<dependencies>
 					<!-- for test status update events -->
 					<dependency>
@@ -36,18 +37,21 @@
 						<version>1.5.0-RELEASE</version>
 					</dependency>
 				</dependencies>
-				<!-- Under here is the configuration element used by the Squash TA server (commandline-default configuration) -->
+				<!-- Under here is the configuration element used by the Squash TA server 
+					(commandline-default configuration) -->
 				<configuration>
 					<alwaysSuccess>false</alwaysSuccess>
 					<logConfiguration>${logConfFile}</logConfiguration>
 					<exporters>
-						<exporter implementation="org.squashtest.ta.commons.exporter.surefire.SurefireSuiteResultExporter">
+						<exporter
+							implementation="org.squashtest.ta.commons.exporter.surefire.SurefireSuiteResultExporter">
 							<exportAttached>true</exportAttached>
 							<jenkinsAttachmentMode>true</jenkinsAttachmentMode>
 						</exporter>
 					</exporters>
 					<configurers>
-						<configurer implementation="org.squashtest.ta.link.SquashTMCallbackEventConfigurer">
+						<configurer
+							implementation="org.squashtest.ta.link.SquashTMCallbackEventConfigurer">
 							<endpointURL>${status.update.events.url}</endpointURL>
 							<executionExternalId>${squash.ta.external.id}</executionExternalId>
 							<jobName>${jobname}</jobName>
@@ -56,18 +60,19 @@
 						</configurer>
 					</configurers>
 				</configuration>
-				
+
 				<executions>
 					<execution>
 						<configuration>
 							<exporters>
-        						<exporter
-                        			implementation="org.squashtest.ta.commons.exporter.surefire.SurefireSuiteResultExporter">
-                        			<!-- Activate attached file export (additional failure reports provided by some components) -->
-            						<exportAttached>true</exportAttached>
-        						</exporter>
-    						</exporters>
-    						<configurers combine.self="override" />
+								<exporter
+									implementation="org.squashtest.ta.commons.exporter.surefire.SurefireSuiteResultExporter">
+									<!-- Activate attached file export (additional failure reports provided 
+										by some components) -->
+									<exportAttached>true</exportAttached>
+								</exporter>
+							</exporters>
+							<configurers combine.self="override" />
 						</configuration>
 						<goals>
 							<goal>run</goal>
@@ -79,15 +84,15 @@
 		</plugins>
 
 	</build>
-	
+
 	<repositories>
-	
+
 		<repository>
 			<id>org.squashtest.ta.release</id>
 			<name>squashtest test automation - releases</name>
 			<url>http://repo.squashtest.org/maven2/releases</url>
 		</repository>
-		
+
 	</repositories>
 
 	<pluginRepositories>
@@ -102,7 +107,7 @@
 				<enabled>true</enabled>
 			</releases>
 		</pluginRepository>
-		
+
 	</pluginRepositories>
 
 </project>
