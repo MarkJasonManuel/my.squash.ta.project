@@ -1,0 +1,2 @@
+test :
+# EXECUTE_SAHI squash_sample2.sah ON zomato USING sahiConf.properties

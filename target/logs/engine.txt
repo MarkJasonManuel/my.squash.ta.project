@@ -1,0 +1,100 @@
+[INFO] org.squashtest.ta.backbone.init.ComponentPackagesEnumerator - Listing sqhashTA engine component packages
+[INFO] org.squashtest.ta.backbone.init.ComponentManifestParser - Loading plugin configuration for: org.squashtest.ta.enginecore
+[INFO] org.squashtest.ta.backbone.init.ComponentManifestParser - Loading plugin configuration for: org.squashtest.ta.plugin.commons-component
+[INFO] org.squashtest.ta.backbone.init.ComponentManifestParser - Loading plugin configuration for: org.squashtest.ta.plugin.filechecker
+[INFO] org.squashtest.ta.backbone.init.ComponentManifestParser - Loading plugin configuration for: org.squashtest.ta.plugin.sahi
+[INFO] org.squashtest.ta.backbone.init.ComponentManifestParser - Loading plugin configuration for: org.squashtest.ta.plugin.selenium
+[INFO] org.squashtest.ta.backbone.init.ComponentManifestParser - Loading plugin configuration for: org.squashtest.ta.plugin.soapui
+[INFO] org.squashtest.ta.backbone.init.ComponentManifestParser - Loading plugin configuration for: org.squashtest.ta.plugin.ftp
+[INFO] org.squashtest.ta.backbone.init.ComponentManifestParser - Loading plugin configuration for: org.squashtest.ta.plugin.db
+[INFO] org.squashtest.ta.backbone.init.ComponentManifestParser - Loading plugin configuration for: org.squashtest.ta.plugin.ssh
+[WARN] org.squashtest.ta.api.execution.client.ClientFactory - Rest client configurer : No Squash TA configuration file for TM credentials was given in maven command line argument. No credentials will be used
+[WARN] org.squashtest.ta.plugin.commons.library.ShebangCheck - DatabaseTargetCreator: The target file:/C:/Users/Mark.Manuel/Downloads/install.workspace.directory/my.squash.ta.project/src/squashTA/targets/sahiConf.properties doesn't have any shebang. Please add one, otherwise Squash-TA may fail to instantiate this target.
+[WARN] org.squashtest.ta.plugin.commons.library.ShebangCheck - FTPTargetCreator: The target file:/C:/Users/Mark.Manuel/Downloads/install.workspace.directory/my.squash.ta.project/src/squashTA/targets/sahiConf.properties doesn't have any shebang. Please add one, otherwise Squash-TA may fail to instantiate this target.
+[WARN] org.squashtest.ta.backbone.engine.impl.ContextInitializer - TA context initialization : configuration warning : target 'file:/C:/Users/Mark.Manuel/Downloads/install.workspace.directory/my.squash.ta.project/src/squashTA/targets/sahiConf.properties' could not be instanciated
+[INFO] org.squashtest.ta.backbone.engine.impl.EcosystemRunnerImpl - Beginning execution of ecosystem tests
+[INFO] org.squashtest.ta.backbone.engine.impl.TestRunnerImpl - Beginning execution of test setup.ta
+[INFO] org.squashtest.ta.backbone.engine.impl.TestRunnerImpl - Beginning execution of test sahi.ta
+[ERROR] org.squashtest.ta.backbone.engine.impl.EventManagerImpl - Event misfired on listener org.squashtest.ta.link.RestTestSuiteStatusUpdateListener@6a469fce
+java.lang.IllegalArgumentException: Template parameter value is set to null
+	at org.apache.cxf.jaxrs.impl.UriBuilderImpl.buildFromEncoded(UriBuilderImpl.java:213)
+	at org.apache.cxf.jaxrs.client.ClientProxyImpl.invoke(ClientProxyImpl.java:157)
+	at org.squashtest.ta.api.execution.client.$Proxy34.updateTestSuiteExecutionStatus(Unknown Source)
+	at org.squashtest.ta.link.RestTestSuiteStatusUpdateListener.handle(RestTestSuiteStatusUpdateListener.java:53)
+	at org.squashtest.ta.framework.test.event.TestSuiteStatusUpdate.fire(TestSuiteStatusUpdate.java:35)
+	at org.squashtest.ta.backbone.engine.impl.EventManagerImpl.dispatchEvent(EventManagerImpl.java:101)
+	at org.squashtest.ta.backbone.engine.impl.EventManagerImpl.run(EventManagerImpl.java:80)
+	at java.lang.Thread.run(Thread.java:745)
+[ERROR] org.squashtest.ta.backbone.engine.impl.EventManagerImpl - Event misfired on listener org.squashtest.ta.link.RestTestStatusUpdateListener@5906b028
+java.lang.IllegalArgumentException: Template parameter value is set to null
+	at org.apache.cxf.jaxrs.impl.UriBuilderImpl.buildFromEncoded(UriBuilderImpl.java:213)
+	at org.apache.cxf.jaxrs.client.ClientProxyImpl.invoke(ClientProxyImpl.java:157)
+	at org.squashtest.ta.api.execution.client.$Proxy34.updateTestExecutionStatus(Unknown Source)
+	at org.squashtest.ta.link.RestTestStatusUpdateListener.handle(RestTestStatusUpdateListener.java:63)
+	at org.squashtest.ta.framework.test.event.TestStatusUpdate.fire(TestStatusUpdate.java:35)
+	at org.squashtest.ta.backbone.engine.impl.EventManagerImpl.dispatchEvent(EventManagerImpl.java:101)
+	at org.squashtest.ta.backbone.engine.impl.EventManagerImpl.run(EventManagerImpl.java:80)
+	at java.lang.Thread.run(Thread.java:745)
+[ERROR] org.squashtest.ta.backbone.engine.impl.EventManagerImpl - Event misfired on listener org.squashtest.ta.link.RestTestStatusUpdateListener@5906b028
+java.lang.IllegalArgumentException: Template parameter value is set to null
+	at org.apache.cxf.jaxrs.impl.UriBuilderImpl.buildFromEncoded(UriBuilderImpl.java:213)
+	at org.apache.cxf.jaxrs.client.ClientProxyImpl.invoke(ClientProxyImpl.java:157)
+	at org.squashtest.ta.api.execution.client.$Proxy34.updateTestExecutionStatus(Unknown Source)
+	at org.squashtest.ta.link.RestTestStatusUpdateListener.handle(RestTestStatusUpdateListener.java:63)
+	at org.squashtest.ta.framework.test.event.TestStatusUpdate.fire(TestStatusUpdate.java:35)
+	at org.squashtest.ta.backbone.engine.impl.EventManagerImpl.dispatchEvent(EventManagerImpl.java:101)
+	at org.squashtest.ta.backbone.engine.impl.EventManagerImpl.run(EventManagerImpl.java:80)
+	at java.lang.Thread.run(Thread.java:745)
+[ERROR] org.squashtest.ta.backbone.engine.impl.EventManagerImpl - Event misfired on listener org.squashtest.ta.link.RestTestStatusUpdateListener@5906b028
+java.lang.IllegalArgumentException: Template parameter value is set to null
+	at org.apache.cxf.jaxrs.impl.UriBuilderImpl.buildFromEncoded(UriBuilderImpl.java:213)
+	at org.apache.cxf.jaxrs.client.ClientProxyImpl.invoke(ClientProxyImpl.java:157)
+	at org.squashtest.ta.api.execution.client.$Proxy34.updateTestExecutionStatus(Unknown Source)
+	at org.squashtest.ta.link.RestTestStatusUpdateListener.handle(RestTestStatusUpdateListener.java:63)
+	at org.squashtest.ta.framework.test.event.TestStatusUpdate.fire(TestStatusUpdate.java:35)
+	at org.squashtest.ta.backbone.engine.impl.EventManagerImpl.dispatchEvent(EventManagerImpl.java:101)
+	at org.squashtest.ta.backbone.engine.impl.EventManagerImpl.run(EventManagerImpl.java:80)
+	at java.lang.Thread.run(Thread.java:745)
+[INFO] org.squashtest.ta.plugin.commons.repositories.URLRepository - URLRepository : could not load resource 'sahiConf.properties' from repository 'file:src/squashTA/resources' : malformed url 
+[ERROR] org.squashtest.ta.backbone.engine.impl.TestRunnerImpl - The execution raised an error in the TEST phase of the TA script 'sahi.ta' with the message: 'The resource SCOPE_TEST:sahiConf.properties cannot be found. Please note that the resource name must not contains any space.'.
+[ERROR] org.squashtest.ta.backbone.engine.impl.EventManagerImpl - Event misfired on listener org.squashtest.ta.link.RestTestStatusUpdateListener@5906b028
+java.lang.IllegalArgumentException: Template parameter value is set to null
+	at org.apache.cxf.jaxrs.impl.UriBuilderImpl.buildFromEncoded(UriBuilderImpl.java:213)
+	at org.apache.cxf.jaxrs.client.ClientProxyImpl.invoke(ClientProxyImpl.java:157)
+	at org.squashtest.ta.api.execution.client.$Proxy34.updateTestExecutionStatus(Unknown Source)
+	at org.squashtest.ta.link.RestTestStatusUpdateListener.handle(RestTestStatusUpdateListener.java:63)
+	at org.squashtest.ta.framework.test.event.TestStatusUpdate.fire(TestStatusUpdate.java:35)
+	at org.squashtest.ta.backbone.engine.impl.EventManagerImpl.dispatchEvent(EventManagerImpl.java:101)
+	at org.squashtest.ta.backbone.engine.impl.EventManagerImpl.run(EventManagerImpl.java:80)
+	at java.lang.Thread.run(Thread.java:745)
+[INFO] org.squashtest.ta.backbone.engine.impl.TestRunnerImpl - Beginning execution of test teardown.ta
+[ERROR] org.squashtest.ta.backbone.engine.impl.EventManagerImpl - Event misfired on listener org.squashtest.ta.link.RestTestStatusUpdateListener@5906b028
+java.lang.IllegalArgumentException: Template parameter value is set to null
+	at org.apache.cxf.jaxrs.impl.UriBuilderImpl.buildFromEncoded(UriBuilderImpl.java:213)
+	at org.apache.cxf.jaxrs.client.ClientProxyImpl.invoke(ClientProxyImpl.java:157)
+	at org.squashtest.ta.api.execution.client.$Proxy34.updateTestExecutionStatus(Unknown Source)
+	at org.squashtest.ta.link.RestTestStatusUpdateListener.handle(RestTestStatusUpdateListener.java:63)
+	at org.squashtest.ta.framework.test.event.TestStatusUpdate.fire(TestStatusUpdate.java:35)
+	at org.squashtest.ta.backbone.engine.impl.EventManagerImpl.dispatchEvent(EventManagerImpl.java:101)
+	at org.squashtest.ta.backbone.engine.impl.EventManagerImpl.run(EventManagerImpl.java:80)
+	at java.lang.Thread.run(Thread.java:745)
+[ERROR] org.squashtest.ta.backbone.engine.impl.EventManagerImpl - Event misfired on listener org.squashtest.ta.link.RestTestStatusUpdateListener@5906b028
+java.lang.IllegalArgumentException: Template parameter value is set to null
+	at org.apache.cxf.jaxrs.impl.UriBuilderImpl.buildFromEncoded(UriBuilderImpl.java:213)
+	at org.apache.cxf.jaxrs.client.ClientProxyImpl.invoke(ClientProxyImpl.java:157)
+	at org.squashtest.ta.api.execution.client.$Proxy34.updateTestExecutionStatus(Unknown Source)
+	at org.squashtest.ta.link.RestTestStatusUpdateListener.handle(RestTestStatusUpdateListener.java:63)
+	at org.squashtest.ta.framework.test.event.TestStatusUpdate.fire(TestStatusUpdate.java:35)
+	at org.squashtest.ta.backbone.engine.impl.EventManagerImpl.dispatchEvent(EventManagerImpl.java:101)
+	at org.squashtest.ta.backbone.engine.impl.EventManagerImpl.run(EventManagerImpl.java:80)
+	at java.lang.Thread.run(Thread.java:745)
+[ERROR] org.squashtest.ta.backbone.engine.impl.EventManagerImpl - Event misfired on listener org.squashtest.ta.link.RestTestSuiteStatusUpdateListener@6a469fce
+java.lang.IllegalArgumentException: Template parameter value is set to null
+	at org.apache.cxf.jaxrs.impl.UriBuilderImpl.buildFromEncoded(UriBuilderImpl.java:213)
+	at org.apache.cxf.jaxrs.client.ClientProxyImpl.invoke(ClientProxyImpl.java:157)
+	at org.squashtest.ta.api.execution.client.$Proxy34.updateTestSuiteExecutionStatus(Unknown Source)
+	at org.squashtest.ta.link.RestTestSuiteStatusUpdateListener.handle(RestTestSuiteStatusUpdateListener.java:53)
+	at org.squashtest.ta.framework.test.event.TestSuiteStatusUpdate.fire(TestSuiteStatusUpdate.java:35)
+	at org.squashtest.ta.backbone.engine.impl.EventManagerImpl.dispatchEvent(EventManagerImpl.java:101)
+	at org.squashtest.ta.backbone.engine.impl.EventManagerImpl.run(EventManagerImpl.java:88)
+	at java.lang.Thread.run(Thread.java:745)
